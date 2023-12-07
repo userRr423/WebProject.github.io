@@ -1,128 +1,58 @@
-
-
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Dropdown Menu</title>
-    <style>
-        .dropdown-button {
-            border: none;
-            background: none;
-            outline: none;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-
-        .parent {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            min-width: 200px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            display: block;
-            padding: 5px 0;
-            text-decoration: none;
-            color: #333;
-        }
-
-        .dropdown-content a:hover {
-            color: #fff;
-            background-color: #333;
-        }
-
-        .sidebar-dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .sidebar-dropdown .sidebar-dropdown-content {
-            display: none;
-            position: absolute;
-            left: 100%;
-            top: 0;
-            min-width: 200px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        .sidebar-dropdown:hover .sidebar-dropdown-content {
-            display: block;
-        }
-
-        .sidebar-dropdown-content a {
-            display: block;
-            padding: 5px 0;
-            text-decoration: none;
-            color: #333;
-        }
-
-        .sidebar-dropdown-content a:hover {
-            color: #fff;
-            background-color: #333;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="MainStyle.css">
 </head>
 
 <body>
 
-    <div class="parent">
-        <div class="dropdown">
-            <button class="dropdown-button">Меню</button>
-            <div class="dropdown-content">
-                <div class="sidebar-dropdown">
-                    <a href="#">Пункт 1</a>
-                    <div class="sidebar-dropdown-content">
-                        <a href="page1.html">Подпункт 1.1</a>
-                        <a href="#">Подпункт 1.2</a>
-                        <a href="#">Подпункт 1.3</a>
-                    </div>
-                </div>
-                <a href="page2.html">Пункт 2</a>
-                <a href="#">Пункт 3</a>
-            </div>
-        </div>
+    <div class="logoContainer">
+        <a href="#" class="logo">
+            <img src="logo.png"> <br>
+            Адвокадский кабинет Котова Павла Витальевича</a>
 
-        <div class="dropdown">
-            <button class="dropdown-button">Меню2</button>
-            <div class="dropdown-content">
-                <div class="sidebar-dropdown">
-                    <a href="#">Пункт 1</a>
-                    <div class="sidebar-dropdown-content">
-                        <a href="#">Подпункт 1.1</a>
-                        <a href="#">Подпункт 1.2</a>
-                        <a href="#">Подпункт 1.3</a>
-                    </div>
-                </div>
-                <a href="#">Пункт 2</a>
-                <a href="#">Пункт 3</a>
-            </div>
+        <div class="number">
+            +799999999999
         </div>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35927.94398209511!2d37.553380641559144!3d55.749876865991105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bac1a5d703f%3A0x225cc4ab7cc7dfcd!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INCi0YDQtdGC0LXQudGB0LrQuNC5INCh0YPQtA!5e0!3m2!1sru!2sru!4v1701799221442!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div id="map"></div>
+
+
+    <div class="main">
+        <div class="parent">
+            <div class="dropdown-buttonOne"><a href="page1.html">Обо мне</a></div>
+
+
+            <div class="dropdown">
+                <button class="dropdown-button">Для бизнеса</button>
+                <div class="dropdown-content">
+                    <div class="sidebar-dropdown">
+                        <a href="#">Консультирование</a>
+                        <div class="sidebar-dropdown-content">
+                            <a href="page1.html">Устное консультирование</a>
+                            <a href="page2.html">Письменное консультирование</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown-buttonOne"><a href="page1.html">Контакты</a></div>
+
+            <div class="dropdown">
+                <button class="dropdown-button">Для физических лиц</button>
+                <div class="dropdown-content">
+
+                    <a href="#">Земельные и жилищные споры</a>
+                    <a href="#">Трудовые споры</a>
+                    <a href="#">Семейные споры</a>
+                    <a href="#">Уголовное дело</a>
+                </div>
+            </div>
+
+            <div class="dropdown-buttonOne"><a href="page1.html">Новости</a></div>
+        </div>
+    </div>
 
     <script src="dropdown.js"></script>
 </body>
