@@ -6,7 +6,9 @@ body::before {
     z-index: -1; /* Фон ниже текста */
     /* Параметры фона */
     background: url(fon.jpg) center / cover no-repeat;
-    filter: blur(5px); /* Размытие */
+    background-size: cover;
+    filter: blur(3px);
+    transform: scale(1.1); 
    }
 
 .dropdown-button {
@@ -15,6 +17,8 @@ body::before {
     outline: none;
     margin-left: 20px;
     margin-right: 20px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .dropdown-buttonOne {
@@ -24,6 +28,21 @@ body::before {
     margin-left: 20px;
     margin-right: 20px;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.dropdown-buttonOne:hover {
+    text-decoration: underline;
+  }
+
+.menu {
+    background-color: rgba(205, 214, 219, 0.7);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
 }
 
 a {
@@ -40,11 +59,13 @@ a {
 
     margin-left: 20px;
     margin-right: 20px;
+    
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    
 }
 
 .dropdown-content {
@@ -129,3 +150,65 @@ a {
     font-weight: bold;
     font-style: italic;
   }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(205, 214, 219, 0.7);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .footer {
+    display: flex;
+    background-color: rgba(130, 135, 141, 0.7);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5px;
+  }
+
+  .footText {
+    margin: 5px;
+  }
+
+  iframe {
+    height: 200px;
+    width: 300px;
+  }
+
+  img {
+    border-radius: 60%;
+  }
+  
+
+.face {
+    margin-left: 40%;
+    margin-top: 3%;
+}
+
+.MainTitle {
+    margin: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 30px;
+    font-weight: bold;
+    color:#111010;
+    text-align: center;
+}
+
+
+.madeSite {
+    font-size: 28px;
+    padding-top: 150px;
+    padding-left: 100px;
+}
+
+.aboutMe {
+    
+}
