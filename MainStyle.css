@@ -186,6 +186,16 @@ a {
     border-radius: 60%;
   }
   
+.pic {
+    border-radius: 0%;
+    margin: 15px;
+}
+
+.picCenter {
+    border-radius: 0%;
+    margin: 25px;
+    margin-left: 40%;
+}
 
 .face {
     margin-left: 40%;
@@ -210,5 +220,39 @@ a {
 }
 
 .aboutMe {
+    font-size: large;
+    font-weight: bold;
+}
+
+.paperTitle {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px;
+    text-align: center;
+}
+
+.WelcomeText {
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.newsboard {
+    display: flex;
+    flex-flow: row wrap;
     
+    background-color: #f2ecec;
+    margin: 20px;
+    padding: 20px;
+}
+
+.news {
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.news a {
+    color: aqua;
 }
