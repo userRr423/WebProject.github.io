@@ -5,7 +5,7 @@ body::before {
     top: 0; bottom: 0; /* Вся высота */
     z-index: -1; /* Фон ниже текста */
     /* Параметры фона */
-    background: url(fon.jpg) center / cover no-repeat;
+    background: url(image/fon.jpg) center / cover no-repeat;
     background-size: cover;
     filter: blur(3px);
     transform: scale(1.1); 
@@ -202,6 +202,14 @@ a {
     margin-top: 3%;
 }
 
+.faceS {
+    margin: 30px;
+    margin-left: 15%;
+    margin-top: 3%;
+    border-radius: 4px;
+
+}
+
 .MainTitle {
     margin: 20px;
     margin-left: 20%;
@@ -256,3 +264,56 @@ a {
 .news a {
     color: aqua;
 }
+
+
+#work_jobText {
+    display: none;
+    font-family: Arial, sans-serif; /* Указываем шрифт */
+    font-size: 17px; /* Размер текста */
+    font-weight: bold; /* Жирное начертание */
+    margin: 40px;
+    margin-left: 350px;  
+} 
+
+
+
+#toggleButton {
+    margin: 30px;
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #toggleButton:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    border-radius: 12px;
+    z-index: -1;
+  }
+  
+  #toggleButton:hover {
+    background-color: #45a049;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  #toggleButton:active {
+    background-color: #3e8741;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: translateY(2px);
+  }
